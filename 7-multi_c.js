@@ -6,9 +6,8 @@ if (!isNaN(x) && Number.isInteger(x) && x >= 0) {
     console.log("C is fun");
     i++;
   }
-} else {
-  console.log("Missing number of occurrences");
 }
+// Do **not** print anything if x is invalid or negative
 
 
 

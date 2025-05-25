@@ -1,7 +1,7 @@
-
 const printNumber = (input) => {
-  const num = Number(input);
-
+  // Remove surrounding single or double quotes if any
+  const cleaned = input.replace(/^['"]|['"]$/g, '');
+  const num = Number(cleaned);
 
   if (!isNaN(num) && Number.isInteger(num)) {
     console.log(`My number: ${num}`);
@@ -10,8 +10,9 @@ const printNumber = (input) => {
   }
 };
 
+// Example calls:
+printNumber("89");         // My number: 89
+printNumber("'89'");       // My number: 89
+printNumber("-4545");      // My number: -4545
+printNumber("'ALX'");      // Not a number
 
-// Example calls
-printNumber("42");     // My number: 42
-printNumber("hello");  // Not a number
-printNumber("3.14");   // Not a number

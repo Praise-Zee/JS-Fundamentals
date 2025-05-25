@@ -1,8 +1,14 @@
-const twoArguments = (arg1,arg2)=> {
+const twoArguments = (arg1, arg2) => {
+  if (arg1 && arg2) {
     console.log(`${arg1} is ${arg2}`);
+  } else if (arg1 && !arg2) {
+    console.log(arg1);
+  }
+  // If no arguments, do nothing (prints nothing)
 };
 
-
-//call function
-twoArguments("JavaScript", "tough");
+// Example calls:
+twoArguments("python", "fun");  // Output: python is fun
+twoArguments("HBTN");           // Output: HBTN
+twoArguments();                 // Output: (nothing)
 

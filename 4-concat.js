@@ -9,6 +9,6 @@ const twoArguments = (arg1, arg2) => {
 
 // Example calls:
 twoArguments("python", "fun");  // Output: python is fun
-twoArguments("HBTN");           // Output: HBTN
-twoArguments();                 // Output: (nothing)
+twoArguments("javascript", "tough");           // Output: javascript is tough
+twoArguments("head", "aching");                 // Output: head is aching
 

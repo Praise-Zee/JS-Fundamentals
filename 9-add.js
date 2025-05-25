@@ -1,5 +1,5 @@
-const a = 7;
-const b = 3;
+const a = Number(process.argv[2]);
+const b = Number(process.argv[3]);
 
 
 function add(a, b) {

@@ -1,14 +1,18 @@
-const twoArguments = (arg1, arg2) => {
+
+const printArguments = (arg1, arg2) => {
   if (arg1 && arg2) {
     console.log(`${arg1} is ${arg2}`);
-  } else if (arg1 && !arg2) {
+  } else if (arg1) {
     console.log(arg1);
+  } else {
+    console.log("No argument");
   }
-  // If no arguments, do nothing (prints nothing)
 };
 
-// Example calls:
-twoArguments("python", "fun");  // Output: python is fun
-twoArguments("javascript", "tough");           // Output: javascript is tough
-twoArguments("head", "aching");                 // Output: head is aching
+// Get arguments from the command line
+const arg1 = process.argv[2];
+const arg2 = process.argv[3];
+
+// Call the function with the command-line arguments
+printArguments(arg1, arg2);
 

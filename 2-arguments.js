@@ -1,11 +1,11 @@
-const args = process.argv.slice(2);
+const twoArguments = (arg1, arg2) => {
+  console.log(`${arg1} is ${arg2}`);
+};
 
-if (args.length === 0) {
-  console.log("No arguments");
-} else if (args.length === 1) {
-  console.log("Argument found");
-} else {
-  console.log("Arguments found");
-}
+const arg1 = process.argv[2];
+const arg2 = process.argv[3];
+
+twoArguments(arg1, arg2);
+
 
 

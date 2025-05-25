@@ -1,5 +1,4 @@
-const size = 4;
-
+const size = Number(process.argv[2]);
 
 if (!isNaN(size) && Number.isInteger(size)) {
   let row = 0;
